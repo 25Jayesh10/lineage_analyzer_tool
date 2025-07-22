@@ -1,0 +1,11 @@
+{
+  "procedure": "sp_get_customer",
+  "params": ["@cust_id INT"],
+  "statements": [
+    "DECLARE @temp_address VARCHAR",
+    "SELECT * FROM address WHERE cust_id = @cust_id"
+  ],
+  "variables": ["@temp_address"],
+  "cursors": []
+}
+

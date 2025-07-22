@@ -1,0 +1,12 @@
+{
+  "customer": [
+    "sp_update_customer",
+    "sp_get_customer"
+  ],
+  "address": [
+    "sp_get_customer"
+  ],
+  "sp_get_customer": [
+    "sp_get_address"
+  ]
+}

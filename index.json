@@ -1,0 +1,12 @@
+{
+  "sp_get_customer": {
+    "params": ["@cust_id INT"],
+    "calls": ["sp_get_address"],
+    "tables": ["customer", "address"]
+  },
+  "sp_update_customer": {
+    "params": ["@cust_id INT", "@name VARCHAR"],
+    "calls": [],
+    "tables": ["customer"]
+  }
+}
