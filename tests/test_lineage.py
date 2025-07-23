@@ -48,7 +48,7 @@ class TestDataLineageAnalyzer(unittest.TestCase):
     def test_procedure_with_no_tables_or_calls(self):
         proc = "sp_empty_proc"
         if proc not in self.index_path and proc not in self.ast_path:
-            print(f"⚠️ WARNING: '{proc}' not found in input data. Skipping test logic.")
+            print(f"WARNING: '{proc}' not found in input data. Skipping test logic.")
             return  # Exit the test early but mark as passed
 
         self.assertIn(proc, self.data)

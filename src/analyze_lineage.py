@@ -73,4 +73,4 @@ def analyze_lineage(index_file, ast_file, output_file):
     with open(output_file, "w") as f:
         json.dump(lineage, f, indent=2)
 
-    print(f"✅ Lineage written to {output_file}")
+    print(f"Lineage written to {output_file}")
